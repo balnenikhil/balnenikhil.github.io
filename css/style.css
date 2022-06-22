@@ -1,0 +1,344 @@
+html{
+    font-size:65%;
+    overflow-x:hidden;
+}
+
+body{
+    padding-left: 15rem;
+    background:black;
+    padding-bottom:3rem;
+    margin:0px;
+    padding-right: 15rem;
+    padding-top: 3rem;
+}
+
+.navbar{
+    display:flex;
+    z-index:1000;
+    justify-content: flex-end;
+    align-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar a{
+    padding:1.2rem 3rem;
+    font-size:2rem;
+    background:black;
+    color:white;
+    text-align:center;
+    transition:.2s;
+    text-decoration:none;
+}
+
+.navbar a:hover{
+    background:crimson;
+}
+
+section{
+    padding: 5rem;
+}
+
+.home{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    min-height: 70vh
+}
+
+.home image{
+
+    flex: 1 1 42rem;
+    text-align: center;
+    
+}
+
+.home .image img{
+    height: 40rem;
+    width: 40rem;
+    border-radius: 2rem;
+    align-items: center;
+}
+
+.content{
+    flex: 1 1 42rem;
+}
+
+.content h3{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+    padding-bottom: 0.1rem;
+}
+
+.content span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    color: crimson;
+    display: block;
+    padding-bottom: 0.1rem;
+}
+
+.content p{
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 4.5vw;
+    color: white;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+.heading span{
+    text-transform: uppercase;
+    color: crimson;
+}
+
+.about row{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.about info-container{
+    flex: 1 1 42rem ;
+}
+
+.about .info-container h1{
+    font-size: 3rem;
+    color:white;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.box-container{
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.box-container box{
+    flex:  1 1 20rem;
+}
+
+.box-container h3{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+ 
+.box-container span{
+    color: rgb(211, 210, 210);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.skills .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap:10rem;
+}
+
+.skills .box-container .box{
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: #010101;
+    border-radius: .5rem;
+    background: rgb(36, 36, 36);
+}
+
+.skills img{
+    height: 7rem;
+    margin-bottom: 1rem;
+}
+
+.skills h3{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.gallery .box-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:10rem;
+
+}
+
+.gallery .box-container .box{
+
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.contact row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+
+input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 20%;
+    margin: solid white 1rem;
+}
+
+input,textarea{
+    border-radius: 5rem;
+    padding: 1.2rem 1.8rem;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: none;
+    background: #1a1a1a;
+    margin: 2rem;
+}
+
+textarea {
+    width: 60%;
+    border-radius: 1rem;
+    resize: none;
+    height: 15rem;
+  }
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: crimson;
+    padding: .7rem;
+    font-size: 1.7rem;
+    color: #fff;
+    padding-left: 2rem;
+  }
+
+  .contact h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .contact .info-container{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 3rem;
+  }
+
+  .navbar-links {
+    height: 100%;
+}
+
+  .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+  @media (max-width: 1200px) {
+    html {
+      font-size: 55%;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 12vw;
+    }
+
+    .navbar-links  {
+       flex-direction: column;
+       align-items: flex-start;
+       display: none;
+       width: 100%;
+    }
+
+    .navbar-links a {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar a:hover {
+      padding-bottom: 2rem;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .home {
+      text-align: center;
+      gap: 2rem;
+    }
+    .home .image img {
+      height: 30rem;
+      width: 30rem;
+    }
+    .home .content h3 {
+      font-size: 3rem;
+    }
+    span {
+      font-size: 2.5rem;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+  }
+
+  
